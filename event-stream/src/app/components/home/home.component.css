@@ -23,7 +23,7 @@
   width: 125px;
   height: 146px;
   background-color: transparent !important;
-  transform: translate(-50%, -50%) scaleX(1) scaleY(1.2); /* Equivalent to Tailwind scale-x-[3] and scale-y-[2.5] */
+  transform: translate(-50%, -50%) scaleX(1) scaleY(1.2);
 }
 .text-container {
   inset: 0px;

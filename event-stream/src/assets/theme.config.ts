@@ -13,7 +13,7 @@ interface config {
 const config: config = {
   dark: {
     'font-size': '16px',
-    'background-color': '#000',
+    'background-color': '#1b1c1c',
     color: '#b4b2b2',
     'active-color': '#fff',
     stroke: '#b4b2b2',
@@ -22,7 +22,7 @@ const config: config = {
   },
   light: {
     'font-size': '16px',
-    'background-color': '#fff',
+    'background-color': '#edeff2',
     color: '#3b3d40',
     'active-color': '#3b3d40',
     stroke: '#3b3d40',
