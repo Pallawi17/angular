@@ -1,27 +1,38 @@
-# EventStream
+---
+title: Assignment
+description: Frontend developer Assignment
+owners: Pallawi
+authors: Pallawi
+categories: Assignment
+tags: Assignment
+---
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
+# Project Title
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This project is a demonstration of a responsive web application with a header containing multiple components that are navigable using lazy loading. It also includes a Home component with a design featuring the text "Dog" and an image. Additionally, the project incorporates a toggle button to switch between dark and white modes for the website.
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* Clone the repository.
+* Navigate to the project directory.
+* Install Angular 17 and other dependencies using npm install.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Usage
+* Run the development server using `ng serve` or `npm start`.
+* Open your browser and navigate to the provided URL.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Features
 
-## Running end-to-end tests
+* Header with multiple components and lazy loading navigation.
+* Responsive design across all pages.
+* Home component with "Dog" text and image design.
+* Toggle button for switching between dark and white modes.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+## Technologies Used
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* Angular 17 for front-end development.
