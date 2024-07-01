@@ -1,0 +1,12 @@
+<div class="relative w-full h-full">
+  <ul class="p-2">
+    @if(snippets.length === 0){
+    <li class="text-red-500">No data found!!</li>
+    } @for(snippet of snippets; track snippet.id){
+    <li  class="w-full my-1">
+      <a [routerLink]= "['/snippet', snippet.id]" routerLinkActive="border border-purple-400" class="relative px-2 w-full block text-gray-600 truncate"> {{ snippet.title }}</a>
+    </li>
+    }
+  </ul>
+</div>
+

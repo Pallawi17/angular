@@ -1,0 +1,18 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+:root {
+  --primary-color: #091526;
+  --secondary-color: #6c757d;
+  --font-size: 16px;
+  --background-color: #1b1c1c;
+  --color: #b4b2b2;
+  --stroke: #b4b2b2;
+  --fill: #b4b2b2;
+  --active-color: #fff;
+}

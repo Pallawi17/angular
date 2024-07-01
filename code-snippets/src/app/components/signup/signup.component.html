@@ -1,0 +1,48 @@
+<form class="max-w-sm mx-auto mt-8 shadow-md" #registerForm="ngForm">
+  <h1 class="text-3xl mb-4">Please Signup</h1>
+  <input
+    type="email"
+    placeholder="abc@gmail.com"
+    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+    name="email"
+    ngModel
+    #email="ngModel"
+    required
+    class="w-full p-2 border border-gray-300 mb-2 rounded-md"
+  />
+  <p
+    class="text-red-500 text-sm mb-2"
+    [hidden]="email.valid || email.untouched"
+  >
+    Enter correct email
+  </p>
+  <input
+    type="password"
+    placeholder="password"
+    name="password"
+    minlength="6"
+    ngModel
+    #password="ngModel"
+    required
+    class="w-full p-2 border border-gray-300 mb-2 rounded-md"
+  />
+  <p
+    class="text-red-500 text-sm mb-2"
+    [hidden]="password.valid || password.untouched"
+  >
+    Enter correct password
+  </p>
+  <button
+    (click)="Signup(registerForm)"
+    [disabled]="registerForm.invalid"
+    class="w-full bg-blue-500 text-white p-2 rounded-md mb-2 hover:bg-blue-600 disabled:opacity-50 disabled:pointer-events-none"
+  >
+    Signup
+  </button>
+  <button
+    (click)="cancel(registerForm)"
+    class="w-full bg-gray-300 text-gray-800 p-2 rounded-md mb-2 hover:bg-gray-400"
+  >
+    Cancel
+  </button>
+</form>

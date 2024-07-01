@@ -1,0 +1,38 @@
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  height: 64px;
+  padding: 0px 16px;
+  box-shadow: 0 2px 4px rgba(19, 18, 18,0.5);
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+}
+
+ a{
+   display: flex;
+   align-items: center;
+   text-decoration: none;
+   cursor: pointer;
+   padding-right: 10px;
+   color: var(--color);
+ }
+
+ span{
+   padding-left: 5px;
+ }
+
+.container a.active{
+  color: var(--active-color);
+  font-weight: bold;
+}
+
+.container a.active svg {
+  fill: var(--active-color);
+  stroke: var(--active-color);
+}

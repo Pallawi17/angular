@@ -1,0 +1,8 @@
+<form class="max-w-sm mx-auto mt-8 shadow-md" [formGroup]="snippetsForm">
+  <h1 class="text-3xl mb-4">Create snippets</h1>
+  <input type="text" placeholder="snippets title" [formControl]="title" class="w-full p-2 border border-gray-300 mb-2 rounded-md">
+  <p class="text-red-500 text-sm mb-2" [hidden]="title.valid || title.untouched">Enter correct title</p>
+  <textarea type="text" placeholder="Write code snippets here!!" [formControl]="snippet" class="w-full p-2 border border-gray-300 mb-2 rounded-md"></textarea>
+  <p class="text-red-500 text-sm mb-2" [hidden]="snippet.valid || snippet.untouched">Enter correct snippet</p>
+  <button (click)="createSnippet()" [disabled]="snippetsForm.invalid" class="w-full bg-blue-500 text-white p-2 rounded-md mb-2 hover:bg-blue-600 disabled:opacity-50 disabled:pointer-events-none">Create</button>
+</form>

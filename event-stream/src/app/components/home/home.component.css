@@ -1,0 +1,43 @@
+.home-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 0%;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--background-color);
+}
+.container {
+  position: relative;
+}
+
+.img {
+  position: absolute;
+  left: 49%;
+  top: 52%;
+  background-color: var(--background-color);
+  aspect-ratio: 200 / 200;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 125px;
+  height: 146px;
+  background-color: transparent !important;
+  transform: translate(-50%, -50%) scaleX(1) scaleY(1.2);
+}
+.text-container {
+  inset: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  font-size: 18rem;
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(
+    to top,
+    #ffea00 50%,
+    #f93e3e 50%
+  );
+}

@@ -1,0 +1,12 @@
+<div class="flex justify-between items-center">
+    <h1 class="font-bold">Code snippets</h1>
+    <nav>
+      <a routerLink="/snippet" routerLinkActive="text-purple-500" class="mr-4 hover:text-purple-300">create Snippet</a>
+      @if(authService.isAuthenticated()){
+        <a class="mr-4 cursor-pointer hover:text-purple-400" (click)="logout()">Logout</a>
+      }@else{
+       <a routerLink="/login" routerLinkActive="text-purple-500" class="mr-4 hover:text-purple-400">Login</a>
+       <a routerLink="/signup" routerLinkActive="text-purple-500" class="mr-4 hover:text-purple-400">Signup</a>
+     }
+    </nav>
+  </div>

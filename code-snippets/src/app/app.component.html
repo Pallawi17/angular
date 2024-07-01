@@ -1,0 +1,14 @@
+<div class="flex flex-col h-screen w-screen bg-gray-900 text-white">
+  <div class="p-4 shadow-md bg-gray-800">
+    <app-header></app-header>
+  </div>
+  <hr class="border-black"/>
+  <div class="flex flex-row flex-1">
+    <div class="w-64 shadow-md bg-gray-800">
+      <app-sidebar></app-sidebar>
+    </div>
+    <div class="flex-1 overflow-y-auto p-4">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
